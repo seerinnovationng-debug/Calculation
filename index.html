@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Student Grade Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <p class="tag">ARVYS TECH • JAVASCRIPT PROJECT</p>
+  <h1>Student Grade Calculator</h1>
+
+  <section>
+    <h2>Add a student's result</h2>
+    <form id="form" novalidate>
+      <label>Student name
+        <input id="name">
+        <span class="error" id="nameError"></span>
+      </label>
+      <br>
+      <div class="grid" id="scoreInputs"></div>
+      <span class="error" id="scoreError"></span>
+      <button type="submit">Calculate result</button>
+    </form>
+  </section>
+
+  <section>
+    <h2>Results (<span id="count">0</span> students)</h2>
+    <div class="scroll">
+      <table>
+        <thead id="head"></thead>
+        <tbody id="rows"></tbody>
+      </table>
+    </div>
+    <p id="insights">Add results to see class insights.</p>
+    <p class="hint">Grade scale: A 70+, B 60-69, C 50-59, D 45-49, E 40-44, F below 40.</p>
+    <button type="button" id="clear">Clear results</button>
+  </section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
